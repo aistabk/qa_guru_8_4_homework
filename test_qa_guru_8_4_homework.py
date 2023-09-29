@@ -1,4 +1,4 @@
-
+import math, random
 
 def test_greeting():
     """
@@ -34,7 +34,7 @@ def test_circle():
     Напишите программу, которая берет радиус круга и выводит на экран его длину и площадь.
     Используйте константу PI
     """
-    import math as math
+
     r = 23
     # TODO сосчитайте площадь
     area = math.pi * r ** 2
@@ -49,12 +49,12 @@ def test_random_list():
     """
     Создайте список из 10 случайных чисел от 1 до 100 и отсортируйте его по возрастанию.
     """
-    import random as random
-    from random import randint
+
     # TODO создайте список
 
-    xl = random.sample(range(1, 100), 10)
-    l = sorted(xl)
+    l = random.sample(range(1, 101), 10)
+    l.sort()
+
     assert len(l) == 10
     assert l[0] < l[-1]
 
