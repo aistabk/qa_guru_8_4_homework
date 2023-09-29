@@ -53,8 +53,8 @@ def test_random_list():
     from random import randint
     # TODO создайте список
 
-    l = random.sample(range(1, 100), 10)
-
+    xl = random.sample(range(1, 100), 10)
+    l = sorted(xl)
     assert len(l) == 10
     assert l[0] < l[-1]
 
